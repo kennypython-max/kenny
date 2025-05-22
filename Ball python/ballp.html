@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carolina Reptiles - Ball Pythons</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+    nav {
+      background-color: #3b3b3b;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #66bb6a;
+      border-radius: 5px;
+    }
+    header {
+      text-align: center;
+      color: #2e7d32;
+      padding: 40px 20px 20px 20px;
+    }
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background-color: #fff;
+      border-left: 5px solid #66bb6a;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+    .product-card:hover {
+      transform: scale(1.02);
+    }
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .product-card h3 {
+      margin-top: 0;
+      color: #2e7d32;
+    }
+    .product-card p {
+      margin: 5px 0;
+    }
+    .sold {
+      color: red;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #3b3b3b;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Ball Pythons</a>
+    <a href="#">Pythons</a>
+    <a href="#">Boas</a>
+    <a href="#">Corn/King/Milk/Rat Snakes</a>
+    <a href="#">Misc Reptiles</a>
+    <a href="#">Exotic Pets</a>
+    <a href="#">Terms</a>
+  </nav>
+
+  <header>
+    <h1>Ball Pythons</h1>
+    <p>Explore our selection of Ball Pythons available for sale.</p>
+  </header>
+
+  <main>
+    <div class="product-grid">
+
+      <!-- Example product with image -->
+      <div class="product-card">
+        <img src="PY2.jpg" alt="Pastel Puma Ball Python">
+        <h3>Banana Leopard</h3>
+        <p>Baby Male</p>
+        <p>Price: $200</p>
+      </div>
+
+      <div class="product-card">
+        <img src="ban.jpg" alt="Het Clown Female">
+        <h3>Banana Pastel</h3>
+        <p>Price: $350 each</p>
+        <p>Discount for Local Pick up.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="black.jpg" alt="Jigsaw Ball Python">
+        <h3>All Black Pastel</h3>
+        <p>Baby female</p>
+        <p>Price: $400</p>
+      </div>
+
+      <div class="product-card">
+        <img src="PYT.jpg" alt="Killer Pied Ball Python">
+        <h3>Killer Pied</h3>
+        <p class="sold">SOLD</p>
+      </div>
+      <div class="product-card">
+        <img src="urban.jpg" alt="Killer Pied Ball Python">
+        <h3>Urban Camo</h3>
+        <p>price: $350</p>
+      </div>
+      <!-- Add more product-card blocks as needed -->
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2017 - 2025 Carolina Reptiles. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
